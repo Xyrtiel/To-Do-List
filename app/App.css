@@ -21,34 +21,34 @@ body {
 
 h1 {
   color: #f5f5f5;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .TodoWrapper {
   background: #2A2E3F;
   margin-top: 5rem;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .TodoForm {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .todo-input {
   outline: none;
   background: #3F4451;
   border: 1px solid #6C8EBF;
-  padding: 0.75rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 320px;
+  padding: 0.85rem 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 350px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .todo-input::placeholder {
@@ -59,9 +59,9 @@ h1 {
   background: #6C8EBF;
   color: #fff;
   border: none;
-  padding: 0.65rem;
+  padding: 0.75rem 1.2rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
@@ -75,19 +75,19 @@ h1 {
   align-items: center;
   background: #6C8EBF;
   color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .Todo:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .fa-trash {
-  margin-left: 0.75rem;
+  margin-left: 1rem;
   color: #FF6F61;
   transition: color 0.3s ease;
 }
