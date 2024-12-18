@@ -1,10 +1,10 @@
-import React from "react";
+import './App.css';
+import { TodoWrapper } from './components/TodoWrapper';
 
 function App() {
   return (
-    <div>
-      <h1>Bienvenue dans React!</h1>
-      <p>Ceci est un fichier App.js minimal pour tester votre application.</p>
+    <div className="App">
+      <TodoWrapper  />
     </div>
   );
 }
