@@ -13,15 +13,13 @@ export const TodoWrapperLocalStorage = () => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
         setTodos(savedTodos);
     }, []);
-
-    // Ajouter un todo
+    
     const addTodo = (todo) => {
         const newTodos = [...todos, { id: uuidv4(), task: todo, completed: false, isEditing: false }];
         setTodos(newTodos);
         localStorage.setItem('todos', JSON.stringify(newTodos));  
     };
 
-    // Basculer l'état de complétion d'un todo
     const toggleComplete = (id) => {
         const newTodos = todos.map(todo =>
             todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -30,14 +28,12 @@ export const TodoWrapperLocalStorage = () => {
         localStorage.setItem('todos', JSON.stringify(newTodos));  
     };
 
-    // Supprimer un todo
     const deleteTodo = (id) => {
         const newTodos = todos.filter(todo => todo.id !== id);
         setTodos(newTodos);
         localStorage.setItem('todos', JSON.stringify(newTodos));  
     };
 
-    // Modifier l'état d'édition d'un todo
     const editTodo = (id) => {
         const newTodos = todos.map(todo =>
             todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo
@@ -46,7 +42,6 @@ export const TodoWrapperLocalStorage = () => {
         localStorage.setItem('todos', JSON.stringify(newTodos));  
     };
 
-    // Mettre à jour la tâche d'un todo (édition)
     const editTask = (task, id) => {
         const newTodos = todos.map(todo =>
             todo.id === id ? { ...todo, task, isEditing: !todo.isEditing } : todo
