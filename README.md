@@ -1,80 +1,87 @@
 # Todo List Application
 
-Bienvenue dans l'application **Todo List** ! Ce projet est une application simple de gestion de tâches permettant d'ajouter, modifier, marquer comme complètes ou supprimer des tâches. Elle est construite avec **React** et utilise le **localStorage** pour conserver les données, ce qui permet à l'utilisateur de retrouver ses tâches même après un rechargement de la page.
+Bienvenue dans l'application **Todo List** ! Ce projet est conçu pour vous permettre de gérer facilement vos tâches quotidiennes. Vous pouvez y ajouter, modifier, marquer comme complètes ou supprimer des tâches. Développée avec **React**, l'application utilise le **localStorage** pour garantir que vos données persistent même après un rechargement de la page.
 
 ## Fonctionnalités
 
-L'application vous permet de :
-- Ajouter des tâches avec une description personnalisée.
-- Modifier les tâches existantes.
-- Marquer les tâches comme complètes ou non complètes.
-- Supprimer des tâches.
-- Conserver vos tâches entre les sessions grâce au stockage local (`localStorage`).
+L'application vous offre plusieurs fonctionnalités pratiques pour gérer vos tâches :
+
+- Ajouter des tâches avec une description que vous personnalisez.
+- Modifier une tâche à tout moment.
+- Marquer une tâche comme complétée ou non.
+- Supprimer une tâche de votre liste.
+- Conserver vos tâches entre différentes sessions grâce à l'utilisation du `localStorage`.
 
 ## Prérequis
 
-Avant de commencer, vous devez avoir installé les outils suivants :
+Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
 
-- **Node.js** : Vous pouvez installer Node.js en visitant le site officiel [Node.js](https://nodejs.org/) et en téléchargeant la dernière version stable.
-- **npm** (ou **yarn** si vous préférez) : npm est livré avec Node.js.
+- **Node.js** : Si vous ne l'avez pas déjà, vous pouvez télécharger la dernière version stable depuis [Node.js](https://nodejs.org/).
+- **npm** (ou **yarn** si vous le préférez) : npm est inclus avec Node.js.
 
 ## Installation
 
-1. Clonez ce projet sur votre machine locale :
+Voici les étapes pour faire fonctionner le projet en local sur votre machine :
+
+1. Clonez ce dépôt sur votre machine :
 
    ```bash
    git clone https://github.com/votre-nom-utilisateur/todolist-app.git
    ```
-Accédez au répertoire du projet :
 
-```bash
-cd todolist-app
- ```
-Installez les dépendances nécessaires :
+2. Accédez au dossier du projet :
 
-Si vous utilisez npm :
-```bash
-npm install
- ```
-Si vous préférez yarn :
-```bash
-yarn install
-```
-Lancez le projet en mode développement :
+   ```bash
+   cd todolist-app
+   ```
 
-Avec npm :
-```bash
-npm run dev
-```
-Ou avec yarn :
-```bash
-yarn dev
-```
-Vous pouvez maintenant ouvrir votre navigateur et accéder à l'application à l'adresse suivante : http://localhost:3000.
+3. Installez les dépendances nécessaires :
 
-# Structure du projet
-# Todo List React
+   Si vous utilisez npm :
 
-## Description
+   ```bash
+   npm install
+   ```
 
-Le projet consiste en une application Todo List développée en React. Il permet à l'utilisateur de gérer des tâches : les ajouter, les modifier, les marquer comme complètes, et les supprimer. Toutes les données sont stockées dans le `localStorage` pour être conservées même après un rechargement de la page.
+   Si vous préférez yarn :
 
-## Structure du Projet
+   ```bash
+   yarn install
+   ```
 
-Le projet est structuré de manière simple et modulaire, facilitant la gestion du code et son extensibilité. Voici un aperçu des principaux répertoires et fichiers :
+4. Lancez le projet en mode développement :
+
+   Avec npm :
+
+   ```bash
+   npm run dev
+   ```
+
+   Avec yarn :
+
+   ```bash
+   yarn dev
+   ```
+
+5. Ouvrez votre navigateur et allez à l'adresse suivante pour voir l'application :  
+   [http://localhost:3000](http://localhost:3000)
+
+## Structure du projet
+
+Le projet est organisé de manière simple et modulaire, facilitant la gestion du code ainsi que son évolution future. Voici un aperçu des principaux répertoires et fichiers du projet :
 
 ### `/components`
-Contient les composants principaux de l'application.
+Ce dossier contient les composants clés qui gèrent la logique de l'application.
 
-- **TodoWrapper.js** : Composant principal gérant l'état des tâches, l'ajout, la suppression, et la modification des tâches.
-- **TodoForm.js** : Composant pour ajouter de nouvelles tâches.
-- **Todo.js** : Composant représentant chaque tâche individuelle avec ses options d'édition et de suppression.
-- **EditTodoForm.js** : Composant pour éditer une tâche existante.
+- **TodoWrapper.js** : Le composant principal qui gère l'état des tâches, leur ajout, leur suppression et modification.
+- **TodoForm.js** : Un formulaire permettant à l'utilisateur d'ajouter de nouvelles tâches.
+- **Todo.js** : Représente chaque tâche individuelle avec des options pour l'édition et la suppression.
+- **EditTodoForm.js** : Permet de modifier une tâche existante.
 
 ### `/styles`
-Contient les fichiers CSS pour le style de l'application.
+Contient les fichiers CSS pour gérer l'apparence de l'application.
 
-- **style.css** : Fichier CSS global pour la mise en forme de l'application.
+- **style.css** : Fichier de style global pour l'application.
 
 ## Fonctionnement
 
@@ -110,13 +117,3 @@ Ce projet est open-source et vous êtes invité à contribuer ! Si vous souhaite
 ## Licence
 
 Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le distribuer selon les termes de cette licence.
-
-
----
-
-### Explications :
-
-- **Usage de Markdown** : Le format Markdown permet de structurer le README avec des titres, des sections claires et lisibles. 
-- **Explication complète** : Chaque fonctionnalité et étape est bien détaillée pour que même un développeur débutant puisse comprendre le projet et l'utiliser.
-- **Instructions d'installation et d'utilisation** : Un guide complet sur la façon d'installer et de faire fonctionner le projet localement.
-- **Contributions et développement** : Encourage les autres à contribuer et fournit des instructions pour créer des pull requests.
